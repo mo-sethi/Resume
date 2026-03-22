@@ -1,0 +1,355 @@
+/* ============================================
+   style.css — Mohit Sethi Resume Website
+   ============================================ */
+
+/* ── Google Font Import ── */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+/* ── 1. ELEMENT SELECTORS — Base Styles ── */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f3ef;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1c2b3a;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    border-bottom: 2px solid #1c2b3a;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+p {
+    margin: 6px 0 10px 0;
+}
+
+a {
+    color: #b8974f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1c2b3a;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd8d0;
+    margin: 24px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* ── 2. ID SELECTOR — Page wrapper ── */
+
+#about,
+#education,
+#skills,
+#languages,
+#activities,
+#awards,
+#hobbies,
+#contact-details,
+#contact-form {
+    background-color: #ffffff;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    border-left: 4px solid #b8974f;
+    border-radius: 3px;
+}
+
+
+/* ── 3. ELEMENT SELECTOR — Nav bar with Flexbox ── */
+
+nav {
+    background-color: #1c2b3a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+}
+
+nav a {
+    color: #c9d1d9;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+    color: #b8974f;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+}
+
+/* Hide the | pipe separators between nav links */
+nav br {
+    display: none;
+}
+
+
+/* ── 4. ELEMENT SELECTOR — Header ── */
+
+header {
+    background-color: #1c2b3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px 32px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #c9d1d9;
+    margin: 4px 0;
+}
+
+header em {
+    color: #b8974f;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+header a {
+    color: #c9d1d9;
+}
+
+header a:hover {
+    color: #b8974f;
+}
+
+header img {
+    border-radius: 50%;
+    border: 4px solid #b8974f;
+    display: block;
+    margin: 40px auto -20px auto;
+}
+
+
+/* ── 5. CLASS SELECTOR — Page wrapper (applied via main/section) ── */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* ── 6. ELEMENT SELECTOR — Tables ── */
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #1c2b3a;
+}
+
+thead th {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd8d0;
+}
+
+tbody tr:hover {
+    background-color: #eee9e0;
+}
+
+tbody td {
+    padding: 10px 14px;
+    color: #444;
+}
+
+
+/* ── 7. ELEMENT SELECTOR — Article cards ── */
+
+article {
+    padding: 16px 0;
+    border-bottom: 1px dashed #ddd8d0;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article h3 {
+    color: #1c2b3a;
+}
+
+
+/* ── 8. ELEMENT SELECTOR — Footer ── */
+
+footer {
+    background-color: #1c2b3a;
+    color: #8a96a3;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 4px 0;
+    color: #8a96a3;
+}
+
+footer a {
+    color: #b8974f;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+/* ── 9. ELEMENT SELECTOR — Forms ── */
+
+form label {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1c2b3a;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    max-width: 460px;
+    padding: 9px 12px;
+    border: 1px solid #ddd8d0;
+    border-radius: 3px;
+    background-color: #f5f3ef;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #b8974f;
+    background-color: #ffffff;
+}
+
+form button {
+    background-color: #1c2b3a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+form button:hover {
+    background-color: #b8974f;
+}
+
+
+/* ── 10. MEDIA QUERY — Mobile Responsive ── */
+
+@media (max-width: 600px) {
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav a {
+        padding: 12px 14px;
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    main, section {
+        padding: 0 14px 30px;
+    }
+
+    #about, #education, #skills, #languages,
+    #activities, #awards, #hobbies,
+    #contact-details, #contact-form {
+        padding: 16px 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        max-width: 100%;
+    }
+}
